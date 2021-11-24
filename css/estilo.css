@@ -23,7 +23,7 @@ header {
 }
 
 #perfil {
-    background-image: url(../assets/imagens/eu.jpg);
+    background-image: url(../assets/imagens/eu.png);
     background-size: cover;
     background-position: center;
     width: 180px;
@@ -303,4 +303,54 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/* ------------------ Responsividade ------------------*/
+
+@media (max-width: 764px) {
+    #escritorio,
+    .imgExp {
+        display: none;
+    }
+    #mouse {
+        bottom: 5%;
+    }
+    .exp {
+        height: 215px;
+    }
+    .dados p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    #background {
+        background-image: url(../assets/imagens/Imagem-fundo2.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: .4;
+    }
+    .icones {
+        width: 60%;
+    }
+    .botoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .botoes a:nth-child(2) {
+        margin-left: 0 !important;
+    }
+    #habilidades article {
+        height: 90%;
+    }
+    .item {
+        transform: scale(.9);
+    }
+    .janela .item:nth-child(1) {
+        margin-top: 10% !important;
+    }
 }
