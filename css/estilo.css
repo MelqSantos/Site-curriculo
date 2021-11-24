@@ -8,6 +8,9 @@ body {
     background-color: rgba(0, 0, 0, 0.05) !important
 }
 
+
+/* Força a cor de fundo das seções para branco */
+
 #sobre,
 #habilidades,
 #experiencia,
@@ -21,6 +24,9 @@ body {
 header {
     background-color: #000000;
 }
+
+
+/* Todos atributos do perfil da pessoa */
 
 #perfil {
     background-image: url(../assets/imagens/eu.png);
@@ -70,6 +76,9 @@ header {
     margin-top: 15px;
 }
 
+
+/* Classe genérica dos botões */
+
 .botoes a {
     margin-top: 20px;
     width: 180px;
@@ -78,10 +87,16 @@ header {
     font-size: 1.2rem;
 }
 
+
+/* Elementos referentes ao botão "Contato" */
+
 .botoes a:nth-child(1) {
     background-color: rgba(0, 0, 0, 0.5) !important;
     border: solid 1px rgba(255, 255, 255, 0.3) !important;
 }
+
+
+/* Elementos referentes ao botão "Currículo" */
 
 .botoes a:nth-child(2) {
     margin-left: 15px !important;
@@ -100,6 +115,9 @@ header {
     animation: mexer 1s infinite;
 }
 
+
+/* Animação para o ponteiro do mouse ficar mexendo */
+
 @keyframes mexer {
     0% {
         transform: translateY(0);
@@ -114,6 +132,9 @@ header {
 
 
 /* ------------------- Sessão Sobre ------------------- */
+
+
+/* Atribui uma borda e sombra em todas as seções */
 
 #sobre,
 #habilidades,
@@ -159,6 +180,11 @@ table tr td:nth-child(1) {
     height: 600px;
 }
 
+#habilidades .container-fluid {
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+}
+
 .janela {
     margin-right: 30px;
     border: solid 1px #C4C4C4;
@@ -166,18 +192,6 @@ table tr td:nth-child(1) {
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 4px 4px 4px #C4C4C4;
-}
-
-#escritorio {
-    background-image: url(../assets/imagens/Fundo02.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 595px;
-}
-
-#habilidades .container-fluid {
-    padding-right: 0 !important;
-    margin-left: 0 !important;
 }
 
 
@@ -212,6 +226,16 @@ table tr td:nth-child(1) {
 }
 
 
+/* Imagem do lado das habilidades */
+
+#escritorio {
+    background-image: url(../assets/imagens/Fundo02.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 595px;
+}
+
+
 /* Linguagens utilizadas */
 
 .linguagens {
@@ -228,6 +252,9 @@ table tr td:nth-child(1) {
 .item img {
     margin-right: 15px;
 }
+
+
+/* Barras de progresso */
 
 .progresso {
     width: 90%;
@@ -309,12 +336,13 @@ footer {
 /* ------------------ Responsividade ------------------*/
 
 @media (max-width: 764px) {
+    /* Remove as imagens de fundo para organizar layout */
     #escritorio,
     .imgExp {
         display: none;
     }
     #mouse {
-        bottom: 5%;
+        bottom: 8%;
     }
     .exp {
         height: 215px;
@@ -326,6 +354,7 @@ footer {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
     }
+    /* Altera a imagem de fundo inicial para uma mais adequada */
     #background {
         background-image: url(../assets/imagens/Imagem-fundo2.jpg);
         background-size: cover;
@@ -335,6 +364,7 @@ footer {
     .icones {
         width: 60%;
     }
+    /* Reorganiza o layout dos botões "Currículo" e "Contato" */
     .botoes {
         display: flex;
         justify-content: center;
