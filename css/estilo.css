@@ -151,12 +151,14 @@ header {
     margin-bottom: 20px;
 }
 
-.titulo img {
-    padding-left: 5px;
+.titulo i {
+    padding-left: 10px;
+    font-size: 25px;
 }
 
 .titulo h3 {
     font-weight: 800;
+    padding-top: 3px;
 }
 
 #sobre h5 {
@@ -177,7 +179,7 @@ table tr td:nth-child(1) {
 /* ------------------- Sessão Habilidades ------------------- */
 
 #habilidades {
-    height: 600px;
+    height: 500px;
 }
 
 #habilidades .container-fluid {
@@ -232,15 +234,11 @@ table tr td:nth-child(1) {
     background-image: url(../assets/imagens/Fundo02.jpg);
     background-size: cover;
     background-position: center;
-    height: 595px;
+    height: 495px;
 }
 
 
 /* Linguagens utilizadas */
-
-.linguagens {
-    margin-top: 5%;
-}
 
 .item {
     display: flex;
@@ -261,8 +259,13 @@ table tr td:nth-child(1) {
     text-transform: uppercase;
 }
 
+.progresso h5 {
+    font-weight: 600;
+}
+
 .progress {
     box-shadow: 3px 3px 3px #C4C4C4;
+    height: 12px !important;
 }
 
 .progress-bar {
